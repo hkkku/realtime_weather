@@ -1,0 +1,7 @@
+ 
+
+key
+
+https://api.weatherstack.com/current?access_key=b99b7daa42feab4eccbe24f7292efebf&query=Seoul
+
+http://api.weatherstack.com/current?access_key=b99b7daa42feab4eccbe24f7292efebf&query=Seoul
