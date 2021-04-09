@@ -33,7 +33,7 @@ class App extends React.Component {
         Axios.get(`http://api.weatherstack.com/current?access_key=b99b7daa42feab4eccbe24f7292efebf&query=${this.state.coords.latitude},${this.state.coords.longitude}`).then(res => {
           // console.log(res);
           let weatherData = {
-            temperature: res.data.current.temperature[0],
+            temperature: res.data.current.temperature,
             description: res.data.current.weather_descriptions[0],
             location: res.data.location.name,
             region: res.data.location.region,
