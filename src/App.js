@@ -30,10 +30,10 @@ class App extends React.Component {
         });
         // console.log(this.state.coords);
 
-        Axios.get(`http://api.weatherstack.com/current?access_key=b99b7daa42feab4eccbe24f7292efebf&query=${this.state.coords.latitude},${this.state.coords.longitude}`).then((res) => {
+        Axios.get(`http://api.weatherstack.com/current?access_key=b99b7daa42feab4eccbe24f7292efebf&query=${this.state.coords.latitude},${this.state.coords.longitude}`).then(res => {
           // console.log(res);
           let weatherData = {
-            temperature: res.data.current.temperature,
+            temperature: res.data.current.temperature[0],
             description: res.data.current.weather_descriptions[0],
             location: res.data.location.name,
             region: res.data.location.region,
